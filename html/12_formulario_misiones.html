@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de misiones</title>
+</head>
+
+<body>
+    <header>
+        <h1>Centro de Misiones Galácticas</h1>
+        <p>Registro de operaciones</p>
+    </header>
+    <hr>
+
+    <form action="/misiones" method="post">
+
+        <fieldset>
+            <legend>Información de la misión</legend>
+            <p>
+                <label for="codigo">Código de misión:</label>
+                <input type="text" id="codigo" name="codigo" placeholder="MIS-001" required>
+            </p>
+            <p>
+                <label for="responsable">Responsable:</label>
+                <select id="responsable" name="responsable" required>
+                    <option value="">Selecciona un personaje</option>
+                    <option value="luke">Luke Skywalker</option>
+                    <option value="leia">Leia Organa</option>
+                    <option value="han">Han Solo</option>
+                    <option value="obiwan">Obi-Wan Kenobi</option>
+                </select>
+            </p>
+            <p>
+                <label for="destino">Planeta de destino:</label>
+                <input type="text" id="destino" name="destino" placeholder="Ej. Dagobah" required>
+            </p>
+            <p>
+                <label for="fecha">Fecha de la misión:</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Características</legend>
+            <p>Prioridad de la misión:</p>
+            <p>
+                <input type="radio" id="alta" name="prioridad" value="alta" required>
+                <label for="alta">Alta</label>
+                <input type="radio" id="media" name="prioridad" value="media">
+                <label for="media">Media</label>
+                <input type="radio" id="baja" name="prioridad" value="baja">
+                <label for="baja">Baja</label>
+            </p>
+            <p>
+                <label for="riesgo">Nivel de riesgo (1 a 10):</label>
+                <input type="number" id="riesgo" name="riesgo" min="1" max="10" value="5">
+            </p>
+            <p>Recursos necesarios:</p>
+            <p>
+                <input type="checkbox" id="nave" name="recursos" value="nave">
+                <label for="nave">Nave espacial</label><br>
+                <input type="checkbox" id="droides" name="recursos" value="droides">
+                <label for="droides">Droides</label><br>
+                <input type="checkbox" id="comunicacion" name="recursos" value="comunicacion">
+                <label for="comunicacion">Equipo de comunicación</label>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Descripción de la misión</legend>
+            <label for="objetivo">Objetivo principal:</label><br>
+            <textarea id="objetivo" name="objetivo" rows="4" cols="50" placeholder="Describe la misión..."></textarea>
+        </fieldset>
+
+        <p>
+            <button type="submit">Registrar misión</button>
+            <button type="reset">Limpiar datos</button>
+        </p>
+    </form>
+
+    <hr>
+    <footer>
+        <p>Centro Galáctico - 2026</p>
+    </footer>
+
+</body>
+
+</html>

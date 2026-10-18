@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="180" viewBox="0 0 300 180">
+    <rect width="300" height="180" fill="#eeeeee"/>
+    <rect x="55" y="55" width="190" height="100" fill="#dcebdc" stroke="#245c35" stroke-width="3"/>
+    <path d="M40 58 L150 15 L260 58 Z" fill="#245c35"/>
+    <rect x="130" y="105" width="40" height="50" fill="white" stroke="#245c35" stroke-width="2"/>
+    <rect x="75" y="78" width="30" height="25" fill="white" stroke="#245c35" stroke-width="2"/>
+    <rect x="195" y="78" width="30" height="25" fill="white" stroke="#245c35" stroke-width="2"/>
+    <text x="150" y="172" text-anchor="middle" font-family="Arial" font-size="14">Instituto Marcillo</text>
+</svg>

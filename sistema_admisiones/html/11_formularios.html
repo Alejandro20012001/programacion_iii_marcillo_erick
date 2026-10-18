@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de admisión</title>
+</head>
+<body>
+    <h1>Formulario de admisión</h1>
+    <form action="01_hello_world_mp_erick_marcillo.html" method="get">
+        <p>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </p>
+        <p>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+        </p>
+        <p>
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" name="correo" required>
+        </p>
+        <p>
+            <label for="programa">Programa:</label>
+            <select id="programa" name="programa">
+                <option>Programación</option>
+                <option>Administración</option>
+                <option>Contabilidad</option>
+            </select>
+        </p>
+        <p>Jornada:</p>
+        <input type="radio" id="manana" name="jornada" value="mañana">
+        <label for="manana">Mañana</label>
+        <input type="radio" id="tarde" name="jornada" value="tarde">
+        <label for="tarde">Tarde</label>
+        <p>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpiar</button>
+        </p>
+    </form>
+</body>
+</html>
