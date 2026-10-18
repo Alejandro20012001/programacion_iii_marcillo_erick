@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de información</title>
+</head>
+<body>
+    <h1>Solicitar información de admisión</h1>
+    <form action="01_hello_world_mp_erick_marcillo.html" method="get">
+        <fieldset>
+            <legend>Datos del estudiante</legend>
+            <p>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </p>
+            <p>
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+            </p>
+            <p>
+                <label for="programa">Programa de interés:</label>
+                <select id="programa" name="programa">
+                    <option>Programación</option>
+                    <option>Administración</option>
+                    <option>Contabilidad</option>
+                </select>
+            </p>
+            <p>
+                <label for="pregunta">Pregunta:</label><br>
+                <textarea id="pregunta" name="pregunta" rows="4" cols="35"></textarea>
+            </p>
+        </fieldset>
+        <button type="submit">Enviar consulta</button>
+        <button type="reset">Limpiar</button>
+    </form>
+    <p><a href="01_hello_world_mp_erick_marcillo.html">Volver al sistema de admisión</a></p>
+</body>
+</html>

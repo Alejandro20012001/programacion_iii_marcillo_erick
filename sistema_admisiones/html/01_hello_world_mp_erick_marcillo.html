@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de admisión</title>
+    <link rel="stylesheet" href="admisiones.css">
+    <script src="admisiones.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Instituto Marcillo</h1>
+        <h2>Sistema de admisión</h2>
+        <nav>
+            <a href="02_titulos_mp_marcillo_erick.html">Programas</a>
+            <a href="04_listas_mp_marcillo_erick.html">Pasos</a>
+            <a href="05_ejercicio_marciillo_erick.html">Requisitos</a>
+            <a href="09_semantico.html">Información</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Solicitud de ingreso</h2>
+        <p>Llena el formulario para registrar tu solicitud de admisión.</p>
+        <p>Esta demostración guarda los datos solamente en este navegador.</p>
+
+        <form id="formulario">
+            <fieldset>
+                <legend>Datos personales</legend>
+                <p>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </p>
+                <p>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                </p>
+                <p>
+                    <label for="cedula">Cédula:</label>
+                    <input type="text" id="cedula" name="cedula" required>
+                </p>
+                <p>
+                    <label for="fecha">Fecha de nacimiento:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Contacto y programa</legend>
+                <p>
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+                </p>
+                <p>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </p>
+                <p>
+                    <label for="programa">Programa:</label>
+                    <select id="programa" name="programa" required>
+                        <option value="">Selecciona un programa</option>
+                        <option value="Programación">Programación</option>
+                        <option value="Administración">Administración</option>
+                        <option value="Contabilidad">Contabilidad</option>
+                    </select>
+                </p>
+            </fieldset>
+
+            <p>
+                <input type="checkbox" id="confirmacion" required>
+                <label for="confirmacion">Confirmo que los datos son correctos.</label>
+            </p>
+            <button type="submit">Guardar solicitud</button>
+            <button type="reset">Limpiar</button>
+        </form>
+        <p id="mensaje"></p>
+    </main>
+
+    <footer>
+        <p>Proyecto de admisión del Instituto Marcillo.</p>
+        <p>Autor: Erick Marcillo</p>
+    </footer>
+</body>
+</html>
