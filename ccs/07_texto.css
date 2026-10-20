@@ -1,0 +1,74 @@
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.texto-jedi{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.texto-imperio{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.texto-40px{
+    font-size: 40px;
+}
+.texto-20px{
+    font-size: 20px;
+}
+.texto-10px{
+    font-size: 10px;
+}
+.aprendiz{
+    font-weight:300 ;
+
+}
+.caballero{
+    font-weight: 500;
+}
+
+.maestro{
+    font-weight: 800;
+}
+.estilo_letra_normal{
+    font-size: normal;
+}
+.estilo_letra_italica{
+    font-size: italic;
+}
+.izquierda{
+    text-align: left;
+}
+.centro{
+    text-align:center ;
+}
+.derecha{
+    text-align: right;
+}
+.importante{
+    text-decoration: underline;
+}
+.cancelada{
+    text-decoration: line-through;
+}
+.link{
+    text-decoration: none;
+}
+.titulo_mayuscula{
+    text-transform: uppercase;
+}
+.titulo_minuscula{
+    text-transform: lowercase;
+}
+.titulo_capitalizado{
+    text-transform: capitalize;
+}
+.espaciado_simple{
+    line-height: 1;
+}
+.espaciado_doble{
+    line-height: 2;
+}
+.espaciado_letras1{
+    letter-spacing: 4px;
+}
+.espaciado_letras2{
+    letter-spacing: 1;
+}
