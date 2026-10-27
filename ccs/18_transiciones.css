@@ -1,0 +1,174 @@
+body{background-color: #0b1020;
+color: white;
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+padding: 50px;
+}
+h1{
+color: #facc15;
+}
+.boton{
+    padding: 15px 25px;
+    background-color: #2563eb;
+    color: rgb(134, 10, 10);
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 3s ease;
+}
+.boton-jedi:hover{
+    background-color: #16A34A;
+}
+.boton-jedi:focus-visible{
+background-color: #16A34A;
+outline: 3px solid #facc15;
+outline-offset:4px;
+}
+
+
+.tarjeta{
+    width: 250px;
+    padding: 15px 25px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition-duration: 1s ease;
+    transition-property: background-color, transform;
+    transition: background-color 3.5 ease;
+    transition: transform 3.5s ease;
+}
+
+.tarjeta:hover{
+    background-color: #16A34A;
+    transform: scale(1.05);
+}
+
+.hangar{
+    padding:30px;
+    background-color: #172033;
+}
+
+
+
+.nave{
+    width:100px;
+    padding: 20px;
+    background-color: #2563eb;
+    transition: transform 0.5s ease;
+    /*
+    ease: comienza lento acelera y vuelve a lento al final
+    linear:velocidad constante
+    ease-in:empieza lento  y termina rapido al final
+    ease-out:enpieza lenta, rapido en el centro, termina lenta, simetrcamente marcado
+    ease-in-out:empieza lenta,es rapida en el centro termina lenta
+    cubic-bezier(n,n,n,n):curva de aceleracion*/
+
+}
+.nave:hover{
+    transform: translate(50px, -10px);
+    width: 100px;
+    padding:20px;
+    background-color: #2563eb;
+    transition: transform 0.5px ease;
+}
+
+
+.radar{
+    padding: 30px;
+    display:grid;
+    place-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: #172033;
+    border:3px solid #22C55E;
+    border-radius:50%;
+}
+
+.indicador{
+    color:#16A34A;
+    font-size: 70px;
+    transition: transform 1s ease;
+}
+
+.indicador:hover{
+    transform: rotate(-90deg);
+}
+
+
+
+
+.hangar2{
+    padding: 30px;
+    background-color: #172033;
+}
+
+.nave2{
+    width: 100px;
+    padding:20px;
+    background-color: #2563eb;
+    transition: transform 0.5s ease;
+}
+
+.nave2:hover{
+    transform: translateX(50px) rotate(15deg) scale(4);
+}
+
+
+
+.espacio{
+    width: 100;
+    max-width: 100;
+    padding: 20px;
+    background-color: #172033;
+    overflow:hidden;
+}
+
+
+.xwing{
+    width: 100px;
+    background-color: #2563eb;
+    text-align: center;
+    animation-name: vuelo;
+    animation-duration: 3s;
+}
+
+@keyframes vuelo{
+    from{
+        transform: translateX(30px,100px);
+    }
+    to{
+        transform: translateX(280px,260px);
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes vuelo{
+    from{
+        transform: translateX(30px,100px);
+    }
+    to{
+        transform: translateX(280px,260px);
+
+    }
+}
+
+
+
