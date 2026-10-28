@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducciòn a Javaescript</title>
+    <script>
+        alert('Corre, morty, al inicio de l apagina');
+        console.log('Saludo desde el inicio desde la pagina');
+    </script>
+</head>
+<body>
+    <h1>Incluir Javaescript en documento HTML</h1>
+    <h2>Modo Inline</h2> 
+    <button onclick="alert('!corre, Morty!')"> 
+        Mostrar mensaje
+    </button>
+
+    <input type="text"
+        oninput="console.log(this.value)"
+        placeholder="Escribe algo...">
+    <input type="text"
+        onchange="console.log('valor final guardado',this.value)"
+        placeholder="Escribe algo y haz click afuera">
+    <input type="text"
+        onfocus="console.log('El usuario esta escribiendo aqui')"
+        onblur="console.log('Atencion! saliste fuera del cuadro de texo')"
+        placeholder="Hz click dentro y fuera...">
+    <script src="01_incluir.js">
+    
+    </script>
+    
+    
+</body>
+</html>
