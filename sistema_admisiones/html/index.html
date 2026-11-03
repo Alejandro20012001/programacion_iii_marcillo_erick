@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admisiones | Instituto Superior del Valle</title>
+    <link rel="stylesheet" href="../ccs/admisiones_basico.css">
+</head>
+
+<body>
+    <header class="encabezado">
+        <h1>Instituto Superior MARDO</h1>
+        <p>Sistema de admisión 2026</p>
+    </header>
+    <nav class="navegacion">
+        <a href="#proceso">Proceso</a>
+        <a href="#requisitos">Requisitos</a>
+        <a href="#solicitud">Formulario</a>
+    </nav>
+
+    <main id="inicio" class="contenido">
+        <div class="formulario-columna" id="solicitud">
+            <h2>Solicitud de ingreso</h2>
+            <p>Completa tus datos para iniciar tu solicitud. Los campos con * son obligatorios.</p>
+
+            <form action="#solicitud" method="post">
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <div class="campos">
+                        <div class="campo">
+                            <label for="nombres">Nombres <span class="requerido">*</span></label>
+                            <input type="text" id="nombres" name="nombres" placeholder="Nombres completos" required>
+                        </div>
+                        <div class="campo">
+                            <label for="apellidos">Apellidos <span class="requerido">*</span></label>
+                            <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos completos" required>
+                        </div>
+                        <div class="campo">
+                            <label for="identificacion">Número de identificación <span class="requerido">*</span></label>
+                            <input type="text" id="identificacion" name="identificacion" placeholder="Número de documento" required>
+                        </div>
+                        <div class="campo">
+                            <label for="nacimiento">Fecha de nacimiento <span class="requerido">*</span></label>
+                            <input type="date" id="nacimiento" name="nacimiento" required>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Información de contacto</legend>
+                    <div class="campos">
+                        <div class="campo">
+                            <label for="correo">Correo electrónico <span class="requerido">*</span></label>
+                            <input type="email" id="correo" name="correo" placeholder="nombre@correo.com" required>
+                        </div>
+                        <div class="campo">
+                            <label for="telefono">Teléfono celular <span class="requerido">*</span></label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="09 0000 0000" required>
+                        </div>
+                        <div class="campo campo-completo">
+                            <label for="direccion">Dirección de domicilio</label>
+                            <input type="text" id="direccion" name="direccion" placeholder="Ciudad y dirección">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Información académica</legend>
+                    <div class="campos">
+                        <div class="campo">
+                            <label for="colegio">Institución de procedencia <span class="requerido">*</span></label>
+                            <input type="text" id="colegio" name="colegio" placeholder="Nombre del colegio" required>
+                        </div>
+                        <div class="campo">
+                            <label for="titulo">Título de bachillerato <span class="requerido">*</span></label>
+                            <select id="titulo" name="titulo" required>
+                                <option value="">Selecciona una opción</option>
+                                <option value="obtenido">Título obtenido</option>
+                                <option value="proceso">En proceso de obtención</option>
+                            </select>
+                        </div>
+                        <div class="campo campo-completo">
+                            <label for="carrera">Carrera de interés <span class="requerido">*</span></label>
+                            <select id="carrera" name="carrera" required>
+                                <option value="">Selecciona una carrera</option>
+                                <option value="administracion">Administración</option>
+                                <option value="contabilidad">Contabilidad</option>
+                                <option value="informatica">Desarrollo de software</option>
+                                <option value="enfermeria">Enfermería</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <p class="aviso-formulario"> La solicitud no guarda ni envía información.</p>
+                <button type="submit">Enviar solicitud</button>
+                <button type="reset">Limpiar formulario</button>
+            </form>
+        </div>
+
+        <section class="informacion" id="proceso">
+            <h2>Proceso de admisión</h2>
+            <ol class="pasos">
+                <li>Completa el formulario con tus datos personales.</li>
+                <li>Prepara tu identificación y título de bachiller.</li>
+                <li>Consulta en secretaría las fechas y requisitos.</li>
+            </ol>
+        </section>
+        <section class="requisitos" id="requisitos">
+            <h2>Antes de empezar</h2>
+            <ul>
+                <li>Ten tu número de identificación.</li>
+                <li>Usa un correo electrónico activo.</li>
+                <li>Recuerda el nombre de tu colegio.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <p>Instituto Superior MARDO</p>
+        <p>Admisiones 2026</p>
+    </footer>
+</body>
+
+</html>

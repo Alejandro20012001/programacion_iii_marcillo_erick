@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    background-color: #eeeeee;
+    color: #222222;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.encabezado {
+    padding: 20px;
+    background-color: #245b45;
+    color: white;
+    text-align: center;
+}
+
+.encabezado h1 {
+    margin: 5px;
+}
+
+.encabezado p {
+    margin: 5px;
+}
+
+.navegacion {
+    padding: 12px;
+    background-color: #dddddd;
+    text-align: center;
+}
+
+.navegacion a {
+    margin: 0 12px;
+    color: #222222;
+}
+
+.contenido {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+}
+
+h2 {
+    color: #245b45;
+}
+
+.campos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo-completo {
+    grid-column: 1 / 3;
+}
+
+.campo label {
+    margin-bottom: 5px;
+}
+
+.campo input,
+.campo select {
+    padding: 9px;
+    border: 1px solid #aaaaaa;
+}
+
+fieldset {
+    margin-bottom: 20px;
+    border: 1px solid #aaaaaa;
+}
+
+legend {
+    color: #245b45;
+    font-weight: bold;
+}
+
+.requerido {
+    color: red;
+}
+
+.aviso-formulario {
+    padding: 10px;
+    background-color: #eeeeee;
+}
+
+button {
+    margin: 8px 5px 8px 0;
+    padding: 10px 15px;
+    border: 0;
+    background-color: #245b45;
+    color: white;
+}
+
+.informacion,
+.requisitos {
+    margin-top: 30px;
+    padding-top: 10px;
+    border-top: 1px solid #cccccc;
+}
+
+.pie {
+    padding: 15px;
+    background-color: #245b45;
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .contenido {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .campos {
+        grid-template-columns: 1fr;
+    }
+
+    .campo-completo {
+        grid-column: 1;
+    }
+}
