@@ -52,4 +52,16 @@ for(let mision of misiones){
         totalCristales += cristal;
     }
     console.log("Total de cristales recolectados:", totalCristales);
-}
+
+
+
+
+    let cristalesOringnalees = [30,50,70,40];
+    let cristalesDobles = cristalesOringnalees.map(elemento =>{
+        return elemento * 2;
+    });
+console.log(cristalesDoble);
+let validos = cristalesOringnalees.filter(cristal =>cristal >= 50);
+let resultado = cristalesOriginales.reduce((acumulador, elemento) => {
+    return acumulador + elemento;
+});
